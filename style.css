@@ -1,0 +1,14 @@
+.slider {
+    display: flex;
+    align-items: center;
+    height: 20;
+}
+
+.explanations {
+    position: relative;
+    left: 850;
+    top: 450;
+    width: max-content;
+    margin: 0;
+    font-family: verdana;
+}
