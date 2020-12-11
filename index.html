@@ -2,25 +2,27 @@
     <title>Simple Pendulum</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
     <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>Simple Pendulum</h1>
-    <div>
-        Mass
+    <h1 style="margin: 0; font-family: verdana">Simple Pendulum</h1>
+    <div class="slider">
+        <p>Mass</p>
         <input type="range" min="1" max="500" value="50" id="massSlider">
         <p id="massValue"></p>
     </div>
 
-    <div>
-        Length
+    <div class="slider">
+        <p>Length</p>
         <input type="range" min="10" max="320" value="300" id="lengthSlider">
         <p id="lengthValue"></p>
     </div>
 
-    <div>
-        Damping
+    <div class="slider">
+        <p>Damping</p>
         <input type="range" min="0" max="4" value="1" id="dampingSlider">
         <p id="dampingValue"></p>
     </div>
-    <div id="canvasParent"></div>
+
+    <p class="explanations">a = -mg sin(angle)</p>
 </body>
