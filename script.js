@@ -14,8 +14,7 @@ function setup(){
     lengthSlider = document.getElementById("lengthSlider");
     dampingSlider = document.getElementById("dampingSlider");
 
-    canvas = createCanvas(windowWidth-10, windowHeight-350);
-    canvas.parent("canvasParent");
+    createCanvas(windowWidth-25, windowHeight-134);
 }
 
 function draw(){
@@ -60,8 +59,4 @@ function draw(){
     stroke(190);
     line(x, y, x, 400);
     line(x, y, windowWidth/4 + 400, y);
-}
-
-function windowResized() {
-    resizeCanvas(windowWidth-10, windowHeight-350);
 }
